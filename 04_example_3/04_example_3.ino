@@ -4,7 +4,7 @@ unsigned int count, toggle;
 void setup() {
   pinMode(PIN_LED, OUTPUT);
   Serial.begin(115200);
-  while(!Serial){
+  while (!Serial) {
     ;
   }
   Serial.println("Hello, World!");
@@ -20,6 +20,6 @@ void loop() {
   delay(1000);
 }
 
-int toggle_state(int toggle){
+int toggle_state(int toggle) {
   return toggle ? 0 : 1;
 }
