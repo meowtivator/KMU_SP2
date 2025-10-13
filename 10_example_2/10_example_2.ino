@@ -7,7 +7,7 @@ void setup() {
   myservo.attach(PIN_SERVO); 
   // 0 == 6
   // 90 == 105
-  myservo.write(0);
+  myservo.writeMicroseconds(1600);
   delay(1000);
 }
 
