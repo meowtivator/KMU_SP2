@@ -19,7 +19,7 @@ bool flag = false;
 void setup() {
   myservo.attach(PIN_SERVO); 
   
-  duty_target = _POS_END;
+  duty_target = _DUTY_NEU;
   duty_curr_float = _POS_START;
   myservo.writeMicroseconds((int)duty_curr_float);
   
